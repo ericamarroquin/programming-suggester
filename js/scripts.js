@@ -11,7 +11,9 @@ $(document).ready(function() {
     const operating = parseInt($("#os").val());
     const gaming = parseInt($("#games").val());
     const result = addFiveArgs(interest,dog,cartoons,operating,gaming);
-    console.log(result);
+    const name = $("input#name").val();
+
+    $(".name").text(name);
     
     if (result < 2) {
       $("#python").hide();
