@@ -34,3 +34,7 @@ img {
 .my-4 {
   background-color: ghostwhite;
 }
+
+body {
+  padding-bottom: 200px;
+}

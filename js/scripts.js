@@ -19,19 +19,19 @@ $(document).ready(function() {
       $("#python").hide();
       $("#javaScript").hide();
       $("#swift").hide();
-      $("#cSharp").show();
+      $("#cSharp").slideDown();
     } else if (result < 4) {
       $("#python").hide();
       $("#javaScript").hide();
-      $("#swift").show();
+      $("#swift").slideDown();
       $("#cSharp").hide();
     } else if (result < 6) {
       $("#python").hide();
-      $("#javaScript").show();
+      $("#javaScript").slideDown();
       $("#swift").hide();
       $("#cSharp").hide();
     } else {
-      $("#python").show();
+      $("#python").slideDown();
       $("#javaScript").hide();
       $("#swift").hide();
       $("#cSharp").hide();
