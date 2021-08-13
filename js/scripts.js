@@ -12,5 +12,27 @@ $(document).ready(function() {
     const gaming = parseInt($("#games").val());
     const result = addFiveArgs(interest,dog,cartoons,operating,gaming);
     console.log(result);
+    
+    if (result < 2) {
+      $("#python").hide();
+      $("#javaScript").hide();
+      $("#swift").hide();
+      $("#cSharp").show();
+    } else if (result < 4) {
+      $("#python").hide();
+      $("#javaScript").hide();
+      $("#swift").show();
+      $("#cSharp").hide();
+    } else if (result < 6) {
+      $("#python").hide();
+      $("#javaScript").show();
+      $("#swift").hide();
+      $("#cSharp").hide();
+    } else {
+      $("#python").show();
+      $("#javaScript").hide();
+      $("#swift").hide();
+      $("#cSharp").hide();
+    }
   });
 });
